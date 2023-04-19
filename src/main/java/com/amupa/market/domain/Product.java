@@ -1,9 +1,5 @@
 package com.amupa.market.domain;
 
-import com.amupa.market.persistence.entity.Categoria;
-
-import javax.persistence.*;
-
 public class Product {
     private int productId;
     private String name;

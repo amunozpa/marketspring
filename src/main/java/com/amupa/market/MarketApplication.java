@@ -9,4 +9,5 @@ public class MarketApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MarketApplication.class, args);
 	}
+
 }

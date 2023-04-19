@@ -9,11 +9,10 @@ import org.mapstruct.Mappings;
 
 @Mapper(componentModel = "spring")
 public interface CategoryMapper {
-    //mapeara la entidad category para convertirla en Category y agregar una capa de seguridad
     @Mappings({
             @Mapping(source = "idCategoria", target = "categoryId"),
             @Mapping(source = "descripcion", target = "category"),
-            @Mapping(source = "estado", target = "active")
+            @Mapping(source = "estado", target = "active"),
     })
     Category toCategory(Categoria categoria);
 

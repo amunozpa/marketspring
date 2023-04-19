@@ -11,10 +11,11 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
-@Repository //se puede usar Repository o Component que es una notacion mas general
-public class ProductoRepository implements ProductRepository{
+@Repository
+public class ProductoRepository implements ProductRepository {
     @Autowired
     private ProductoCrudRepository productoCrudRepository;
+
     @Autowired
     private ProductMapper mapper;
 

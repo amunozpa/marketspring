@@ -30,19 +30,9 @@ public class ProductService {
     }
 
     public boolean delete(int productId) {
-        //FORMA1: para usar map metodo de OPTIONAL
-        /*return getProduct(productId).map(product -> {
+        return getProduct(productId).map(product -> {
             productRepository.delete(productId);
             return true;
-        }).orElse(false);*/
-
-        //FORMA2: para usar if else
-        if(getProduct(productId).isPresent()) {
-            productRepository.delete(productId);
-            return true;
-        } else {
-            return false;
-        }
+        }).orElse(false);
     }
-
 }
